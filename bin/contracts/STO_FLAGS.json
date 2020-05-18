@@ -1,0 +1,240 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "WHITELIST_RESTRICTED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "PERIOD_LOCKED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "HYDRO_ORACLE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "HYDRO_ALLOWED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "BLACKLIST_RESTRICTED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "STO_FLAGS_ready",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "ETH_ALLOWED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "PERC_OWNERSHIP_TYPE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "AML_RESTRICTED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "ETH_AMOUNT_TYPE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "ETH_ORACLE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "KYC_RESTRICTED",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "LIMITED_OWNERSHIP",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "HYDRO_AMOUNT_TYPE",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "bytecode": "608060405234801561001057600080fd5b5061028a806100206000396000f3fe608060405234801561001057600080fd5b50600436106100ea5760003560e01c80638f9532001161008c57806397a8feee1161006657806397a8feee14610153578063b3fc7a7b1461015b578063d50ec40514610163578063e0ee7cbc1461016b576100ea565b80638f9532001461013b578063956a9dcd14610143578063967c5ab51461014b576100ea565b806341655c0a116100c857806341655c0a1461011b5780635263e3ec14610123578063854062c21461012b5780638cd6685a14610133576100ea565b806312eaf97a146100ef578063199ba3d71461010b5780633b596b9514610113575b600080fd5b6100f7610173565b604080519115158252519081900360200190f35b6100f7610183565b6100f7610192565b6100f76101a2565b6100f76101b5565b6100f76101c5565b6100f76101ce565b6100f76101e2565b6100f76101f2565b6100f7610208565b6100f761021a565b6100f761022a565b6100f761023f565b6100f761024d565b600054600160501b900460ff1681565b60005462010000900460ff1681565b600054600160681b900460ff1681565b6000546601000000000000900460ff1681565b600054600160581b900460ff1681565b60005460ff1681565b600054670100000000000000900460ff1681565b6000546301000000900460ff1681565b6000546901000000000000000000900460ff1681565b60005465010000000000900460ff1681565b600054600160601b900460ff1681565b60005468010000000000000000900460ff1681565b600054610100900460ff1681565b600054640100000000900460ff168156fea165627a7a72305820b3945523970e88cd17153d3995e99ab4039a9fdb996cda9d0af0466aa807ad8e0029",
+    "functionHashes": {
+        "AML_RESTRICTED()": "956a9dcd",
+        "BLACKLIST_RESTRICTED()": "5263e3ec",
+        "ETH_ALLOWED()": "8cd6685a",
+        "ETH_AMOUNT_TYPE()": "967c5ab5",
+        "ETH_ORACLE()": "97a8feee",
+        "HYDRO_ALLOWED()": "41655c0a",
+        "HYDRO_AMOUNT_TYPE()": "e0ee7cbc",
+        "HYDRO_ORACLE()": "3b596b95",
+        "KYC_RESTRICTED()": "b3fc7a7b",
+        "LIMITED_OWNERSHIP()": "d50ec405",
+        "PERC_OWNERSHIP_TYPE()": "8f953200",
+        "PERIOD_LOCKED()": "199ba3d7",
+        "STO_FLAGS_ready()": "854062c2",
+        "WHITELIST_RESTRICTED()": "12eaf97a"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "130000",
+            "executionCost": "177",
+            "totalCost": "130177"
+        },
+        "external": {
+            "AML_RESTRICTED()": "466",
+            "BLACKLIST_RESTRICTED()": "472",
+            "ETH_ALLOWED()": "510",
+            "ETH_AMOUNT_TYPE()": "488",
+            "ETH_ORACLE()": "449",
+            "HYDRO_ALLOWED()": "444",
+            "HYDRO_AMOUNT_TYPE()": "509",
+            "HYDRO_ORACLE()": "495",
+            "KYC_RESTRICTED()": "465",
+            "LIMITED_OWNERSHIP()": "487",
+            "PERC_OWNERSHIP_TYPE()": "444",
+            "PERIOD_LOCKED()": "467",
+            "STO_FLAGS_ready()": "477",
+            "WHITELIST_RESTRICTED()": "451"
+        }
+    }
+}

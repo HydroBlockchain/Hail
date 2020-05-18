@@ -1,0 +1,198 @@
+{
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_identityRegistryAddress",
+                    "type": "address"
+                }
+            ],
+            "name": "setIdentityRegistryAddress",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "identityRegistry",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "isOwner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getIdentityRegistryAddress",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getOwnerEIN",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "uint256"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_previousOwnerEIN",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newOwnerEIN",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        }
+    ],
+    "bytecode": "608060405234801561001057600080fd5b50600080546001600160a01b03191633178082556040516001600160a01b039190911691907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a361060b806100696000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80638f32d59b116100665780638f32d59b146100f4578063bec44a4614610110578063c44a5a3514610118578063d23e848914610132578063f2fde38b1461014f57610093565b806311d0e35714610098578063134e18f4146100c0578063715018a6146100e45780638da5cb5b146100ec575b600080fd5b6100be600480360360208110156100ae57600080fd5b50356001600160a01b0316610175565b005b6100c86102a3565b604080516001600160a01b039092168252519081900360200190f35b6100be6102b2565b6100c8610331565b6100fc610340565b604080519115158252519081900360200190f35b6100c86103dc565b6101206103eb565b60408051918252519081900360200190f35b6100be6004803603602081101561014857600080fd5b50356103f1565b6100be6004803603602081101561016557600080fd5b50356001600160a01b0316610423565b61017d610340565b61018657600080fd5b6001600160a01b0381166101ce57604051600160e51b62461bcd0281526004018080602001828103825260298152602001806105b76029913960400191505060405180910390fd5b600280546001600160a01b0319166001600160a01b03838116919091179182905560408051600160e01b6305c62c2f028152336004820152905192909116916305c62c2f91602480820192602092909190829003018186803b15801561023357600080fd5b505afa158015610247573d6000803e3d6000fd5b505050506040513d602081101561025d57600080fd5b505160018190556040805160008152602081019290925280517f41545563b5478d4a04f861e33b36e455316904e9fe15096d35d14a5f9885212a9281900390910190a150565b6002546001600160a01b031681565b6002546001600160a01b03166102c757600080fd5b6102cf610340565b6102d857600080fd5b6002546001600160a01b03166102ed57600080fd5b600154604080519182526000602083015280517f41545563b5478d4a04f861e33b36e455316904e9fe15096d35d14a5f9885212a9281900390910190a16000600155565b6000546001600160a01b031690565b6002546000906001600160a01b031661035857600080fd5b60025460408051600160e01b6305c62c2f02815233600482015290516000926001600160a01b0316916305c62c2f916024808301926020929190829003018186803b1580156103a657600080fd5b505afa1580156103ba573d6000803e3d6000fd5b505050506040513d60208110156103d057600080fd5b50516001541491505090565b6002546001600160a01b031690565b60015490565b6002546001600160a01b031661040657600080fd5b61040e610340565b61041757600080fd5b6104208161043d565b50565b61042b610340565b61043457600080fd5b61042081610548565b6002546001600160a01b031661045257600080fd5b61045a610340565b61046357600080fd5b6002546001600160a01b031661047857600080fd5b60025460408051600160e11b632dad769d0281526004810184905290516001600160a01b0390921691635b5aed3a91602480820192602092909190829003018186803b1580156104c757600080fd5b505afa1580156104db573d6000803e3d6000fd5b505050506040513d60208110156104f157600080fd5b50516104fc57600080fd5b8061050657600080fd5b600154604080519182526020820183905280517f41545563b5478d4a04f861e33b36e455316904e9fe15096d35d14a5f9885212a9281900390910190a1600155565b6001600160a01b03811661055b57600080fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b039290921691909117905556fe546865206964656e746974792072656769737472792061646472657373206973207265717569726564a165627a7a723058206b4ae0eaa65561649829d0327d7778ed43073c7aa3bc494206c4e532a01cbc290029",
+    "functionHashes": {
+        "getIdentityRegistryAddress()": "bec44a46",
+        "getOwnerEIN()": "c44a5a35",
+        "identityRegistry()": "134e18f4",
+        "isOwner()": "8f32d59b",
+        "owner()": "8da5cb5b",
+        "renounceOwnership()": "715018a6",
+        "setIdentityRegistryAddress(address)": "11d0e357",
+        "transferOwnership(address)": "f2fde38b",
+        "transferOwnership(uint256)": "d23e8489"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "309400",
+            "executionCost": "22138",
+            "totalCost": "331538"
+        },
+        "external": {
+            "getIdentityRegistryAddress()": "459",
+            "getOwnerEIN()": "442",
+            "identityRegistry()": "460",
+            "isOwner()": "infinite",
+            "owner()": "504",
+            "renounceOwnership()": "infinite",
+            "setIdentityRegistryAddress(address)": "infinite",
+            "transferOwnership(address)": "infinite",
+            "transferOwnership(uint256)": "infinite"
+        },
+        "internal": {
+            "_transferOwnership(uint256)": "infinite"
+        }
+    }
+}

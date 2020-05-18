@@ -1,0 +1,37 @@
+ /*************************************************
+ * Hydro and other addresses on Rinkeby blockchain
+ **************************************************/
+
+    // DateTime contract Rinkeby
+    //address public dateTimeRinkeby = 0x92482Ba45A4D2186DafB486b322C6d0B88410FE7;
+
+    // IdentityRegistry contract Rinkeby
+    //address public identityRinkeby = 0xa7ba71305bE9b2DFEad947dc0E5730BA2ABd28EA;
+
+    // Snowflake contract Rinkeby
+    //address public snowflakeRinkeby = 0xB0D5a36733886a4c5597849a05B315626aF5222E;
+
+    // Hydro Token contract Rinkeby, 18 decimals, symbol = HYDRO
+    //address public hydroTokenRinkeby = 0x4959c7f62051D6b2ed6EaeD3AAeE1F961B145F20;
+
+    // name of the token => address of the token
+
+ /*************************************************
+ * Hydro and other addresses on mainnet blockchain
+ **************************************************/
+
+    // DateTime contract Mainnet
+    //address public dateTimeMainnet = ;
+
+    // IdentityRegistry contract Mainnet
+    //address public identityMainnet = ;
+
+    // Snowflake contract RinkMainneteby
+    //address public snowflakeMainnet = ;
+
+    // Hydro Token contract Mainnet, 18 decimals, symbol = HYDRO
+    //address public hydroTokenMainnet = ;
+
+ /*************************************************
+ * end of document
+ **************************************************/

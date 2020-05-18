@@ -1,0 +1,318 @@
+{
+    "contracts": {
+        "/home/fatima/Downloads/Hydro/code/hst/contracts/interfaces/HSTControlService.sol": {
+            "HSTControlService": {
+                "abi": [
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_token",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_spender",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_from",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_to",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_amount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "controlService",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "author": "Fatima Castiglione Maldonado <castiglionemaldonado@gmail.com>",
+                    "methods": {
+                        "controlService(address,address,address,address,uint256)": {
+                            "details": "This method *MAY* call back to the token contract specified by `_token` for        more information needed to enforce trade approval.",
+                            "params": {
+                                "_amount": "The quantity of the token to trade",
+                                "_from": "The address of the sender account",
+                                "_spender": "The address of the spender of the token",
+                                "_to": "The address of the receiver account",
+                                "_token": "The address of the token to be transfered"
+                            },
+                            "return": "uint8 The reason code: 0 means success.  Non-zero values are left to the implementation              to assign meaning."
+                        }
+                    },
+                    "title": "HSTControlService"
+                },
+                "evm": {
+                    "bytecode": {
+                        "linkReferences": {},
+                        "object": "",
+                        "opcodes": "",
+                        "sourceMap": ""
+                    },
+                    "gasEstimates": null,
+                    "methodIdentifiers": {
+                        "controlService(address,address,address,address,uint256)": "576a2a67"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.5.6+commit.b259423e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_token\",\"type\":\"address\"},{\"name\":\"_spender\",\"type\":\"address\"},{\"name\":\"_from\",\"type\":\"address\"},{\"name\":\"_to\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"controlService\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Fatima Castiglione Maldonado <castiglionemaldonado@gmail.com>\",\"methods\":{\"controlService(address,address,address,address,uint256)\":{\"details\":\"This method *MAY* call back to the token contract specified by `_token` for        more information needed to enforce trade approval.\",\"params\":{\"_amount\":\"The quantity of the token to trade\",\"_from\":\"The address of the sender account\",\"_spender\":\"The address of the spender of the token\",\"_to\":\"The address of the receiver account\",\"_token\":\"The address of the token to be transfered\"},\"return\":\"uint8 The reason code: 0 means success.  Non-zero values are left to the implementation              to assign meaning.\"}},\"title\":\"HSTControlService\"},\"userdoc\":{\"methods\":{\"controlService(address,address,address,address,uint256)\":{\"notice\":\"This method *MUST* be called by `HydroST`s during `transfer()` and `transferFrom()`.        The implementation *SHOULD* check whether or not a transfer can be approved.\"}},\"notice\":\"Standard interface for `Transfer Control Service`s\"}},\"settings\":{\"compilationTarget\":{\"/home/fatima/Downloads/Hydro/code/hst/contracts/interfaces/HSTControlService.sol\":\"HSTControlService\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/fatima/Downloads/Hydro/code/hst/contracts/interfaces/HSTControlService.sol\":{\"keccak256\":\"0x2994beea7e8ec2606e1916effd4985bcada16c5c847738719490a836746dc9c6\",\"urls\":[\"bzzr://fd3f9be3f8e64750d957b12bb47de657a9a84933fcac0e78f754db06bc2508e3\"]}},\"version\":1}",
+                "userdoc": {
+                    "methods": {
+                        "controlService(address,address,address,address,uint256)": {
+                            "notice": "This method *MUST* be called by `HydroST`s during `transfer()` and `transferFrom()`.        The implementation *SHOULD* check whether or not a transfer can be approved."
+                        }
+                    },
+                    "notice": "Standard interface for `Transfer Control Service`s"
+                }
+            }
+        }
+    },
+    "sources": {
+        "/home/fatima/Downloads/Hydro/code/hst/contracts/interfaces/HSTControlService.sol": {
+            "ast": {
+                "absolutePath": "/home/fatima/Downloads/Hydro/code/hst/contracts/interfaces/HSTControlService.sol",
+                "exportedSymbols": {
+                    "HSTControlService": [
+                        17
+                    ]
+                },
+                "id": 18,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.5",
+                            ".4"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "interface",
+                        "documentation": "@title HSTControlService\n@notice Standard interface for `Transfer Control Service`s\n@dev \n@author Fatima Castiglione Maldonado <castiglionemaldonado@gmail.com>",
+                        "fullyImplemented": false,
+                        "id": 17,
+                        "linearizedBaseContracts": [
+                            17
+                        ],
+                        "name": "HSTControlService",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "body": null,
+                                "documentation": "@notice This method *MUST* be called by `HydroST`s during `transfer()` and `transferFrom()`.\n        The implementation *SHOULD* check whether or not a transfer can be approved.\n  * @dev    This method *MAY* call back to the token contract specified by `_token` for\n        more information needed to enforce trade approval.\n  * @param  _token The address of the token to be transfered\n@param  _spender The address of the spender of the token\n@param  _from The address of the sender account\n@param  _to The address of the receiver account\n@param  _amount The quantity of the token to trade\n  * @return uint8 The reason code: 0 means success.  Non-zero values are left to the implementation\n              to assign meaning.",
+                                "id": 16,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "controlService",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 12,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 3,
+                                            "name": "_token",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1040:14:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 2,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1040:7:0",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 5,
+                                            "name": "_spender",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1056:16:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 4,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1056:7:0",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 7,
+                                            "name": "_from",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1074:13:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 6,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1074:7:0",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 9,
+                                            "name": "_to",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1089:11:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_address",
+                                                "typeString": "address"
+                                            },
+                                            "typeName": {
+                                                "id": 8,
+                                                "name": "address",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1089:7:0",
+                                                "stateMutability": "nonpayable",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 11,
+                                            "name": "_amount",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1102:15:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1102:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "1039:79:0"
+                                },
+                                "returnParameters": {
+                                    "id": 15,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 14,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "1137:5:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            },
+                                            "typeName": {
+                                                "id": 13,
+                                                "name": "uint8",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1137:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "1136:7:0"
+                                },
+                                "scope": 17,
+                                "src": "1016:128:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "external"
+                            }
+                        ],
+                        "scope": 18,
+                        "src": "205:941:0"
+                    }
+                ],
+                "src": "0:1147:0"
+            },
+            "id": 0
+        }
+    }
+}

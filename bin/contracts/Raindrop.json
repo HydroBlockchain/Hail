@@ -1,0 +1,35 @@
+{
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_sender",
+                    "type": "address"
+                },
+                {
+                    "name": "_value",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_challenge",
+                    "type": "uint256"
+                },
+                {
+                    "name": "_partnerId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "authenticate",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "bytecode": "",
+    "functionHashes": {
+        "authenticate(address,uint256,uint256,uint256)": "c68ae617"
+    },
+    "gasEstimates": null
+}

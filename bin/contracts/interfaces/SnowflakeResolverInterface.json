@@ -1,0 +1,90 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "callOnAddition",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "callOnRemoval",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "ein",
+                    "type": "uint256"
+                },
+                {
+                    "name": "allowance",
+                    "type": "uint256"
+                },
+                {
+                    "name": "extraData",
+                    "type": "bytes"
+                }
+            ],
+            "name": "onAddition",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "ein",
+                    "type": "uint256"
+                },
+                {
+                    "name": "extraData",
+                    "type": "bytes"
+                }
+            ],
+            "name": "onRemoval",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "bytecode": "",
+    "functionHashes": {
+        "callOnAddition()": "71790251",
+        "callOnRemoval()": "8f06492d",
+        "onAddition(uint256,uint256,bytes)": "90bfaf40",
+        "onRemoval(uint256,bytes)": "9182621a"
+    },
+    "gasEstimates": null
+}

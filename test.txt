@@ -1,0 +1,360 @@
+
+> hstoken@0.1.0 test /home/fatima/Downloads/Hydro/code/hst
+> npx truffle test --network development
+
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/HSToken.sol
+> Compiling ./contracts/Migrations.sol
+> Compiling ./contracts/Snowflake.sol
+> Compiling ./contracts/SnowflakeResolver.sol
+> Compiling ./contracts/_testing/AddressSet/AddressSet.sol
+> Compiling ./contracts/_testing/HydroToken.sol
+> Compiling ./contracts/_testing/IdentityRegistry.sol
+> Compiling ./contracts/_testing/OldClientRaindrop.sol
+> Compiling ./contracts/_testing/SignatureVerifier.sol
+> Compiling ./contracts/apis/datetimeapi.sol
+> Compiling ./contracts/components/DateTime.sol
+> Compiling ./contracts/components/HSTBuyerRegistry.sol
+> Compiling ./contracts/components/HSTEscrow.sol
+> Compiling ./contracts/components/HSTServiceRegistry.sol
+> Compiling ./contracts/components/HSTokenRegistry.sol
+> Compiling ./contracts/components/IdentityRegistry.sol
+> Compiling ./contracts/components/SnowflakeOwnable.sol
+> Compiling ./contracts/interfaces/ClientRaindropInterface.sol
+> Compiling ./contracts/interfaces/HSTControlService.sol
+> Compiling ./contracts/interfaces/HSTokenInterface.sol
+> Compiling ./contracts/interfaces/HydroInterface.sol
+> Compiling ./contracts/interfaces/IdentityRegistryInterface.sol
+> Compiling ./contracts/interfaces/ResolverInterface.sol
+> Compiling ./contracts/interfaces/SnowflakeInterface.sol
+> Compiling ./contracts/interfaces/SnowflakeResolverInterface.sol
+> Compiling ./contracts/interfaces/SnowflakeViaInterface.sol
+> Compiling ./contracts/modules/InvestmentFundSystem.sol
+> Compiling ./contracts/modules/SharesPaymentSystem.sol
+> Compiling ./contracts/resolvers/ClientRaindrop/ClientRaindrop.sol
+> Compiling ./contracts/resolvers/ClientRaindrop/OldClientRaindropInterface.sol
+> Compiling ./contracts/resolvers/ClientRaindrop/StringUtils.sol
+> Compiling ./contracts/resolvers/HydrogenKYC.sol
+> Compiling ./contracts/resolvers/Status.sol
+> Compiling ./contracts/samples/KYCResolver.sol
+> Compiling ./contracts/zeppelin/math/SafeMath.sol
+> Compiling ./contracts/zeppelin/ownership/Ownable.sol
+> Artifacts written to /tmp/test-11975-15338-gu882r.ly98r
+> Compiled successfully using:
+   - solc: 0.5.4+commit.9549d8ff.Emscripten.clang
+
+SafeMath: 0xE225EED8c83B5D800C1C6Cf58eC1A62dF864fe3C
+HydroToken: 0x12e7B80e83de597Fb1d89b6DE991877E103b2Cac
+Network: development
+DEV 0x12e7B80e83de597Fb1d89b6DE991877E103b2Cac 0xa3c3508DBEF3B80a220340c2869a4514a1AFb43A
+undefined
+
+[0m[0m
+[0m  Contract: Testing HSToken[0m
+  [32m  ✓[0m[90m Users created[0m
+    common - Date Time 0x70e7a4b70c60EE932Df26dB1AB03CAd19a9d92a1
+    common - Hydro Token 0x0a77af46B84f8600289b484C130093Fa6e8A7EB4
+    common - Identity Registry 0x5499722A878F40feE8228e2BFf2dDd04E42bfc8d
+    common - Snowflake 0x70e511d1FC42C719B8525e93C2F8216B0Ca24640
+    common - Old Client Raindrop 0xCCed8BfA7a6C974591a6134b9991B154c892948E
+    common - Client Raindrop 0x1A26617525F0B03D9165Fd547E82ffebFE38888f
+    common - KYC Resolver 0x5A867b8A02ae112337cb3F35ADE0F5A4aA3aF24E
+    common - Buyer Registry 0x42FbADecCd2b7189280f32AD079600d03324caf9
+    common - Token Registry 0xf1A909B20947125c37cB54e44dd81E39c6527DF0
+    common - Service Registry 0x51AEC82ec2b6b41ac1a9beE7fe9AA4e4c3F3F8e2
+    common - finishing and returning instances
+  [32m  ✓[0m[90m common contracts deployed[0m[31m (1439ms)[0m
+  [32m  ✓[0m[90m Snowflake identities created for all accounts[0m[31m (2762ms)[0m
+[0m    Checking HSToken functionality[0m
+HSToken Address 0x58B88F2cBD915d611B3F795aA89DC9A56192a489
+User 0xE996E35F30f51399B28a9B36E82cedc873381EE9
+    [32m  ✓[0m[90m HSToken can be created[0m[31m (117ms)[0m
+    [32m  ✓[0m[90m HSToken exists[0m
+    [32m  ✓[0m[90m Appoint token[0m[33m (71ms)[0m
+    [32m  ✓[0m[90m Set default values to BuyerRegistry[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer 1[0m[31m (109ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer 2[0m[33m (64ms)[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add service[0m[31m (176ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add kyc for buyer 1[0m[33m (57ms)[0m
+    [32m  ✓[0m[90m HSToken set MAIN_PARAMS[0m[33m (53ms)[0m
+    [32m  ✓[0m[90m HSToken set STO_FLAGS[0m[33m (53ms)[0m
+    [32m  ✓[0m[90m HSToken set STO_PARAMS[0m[33m (51ms)[0m
+    [32m  ✓[0m[90m HSToken activate Prelaunch[0m[33m (41ms)[0m
+    [32m  ✓[0m[90m HSToken activate Presale[0m[33m (43ms)[0m
+    [32m  ✓[0m[90m HSToken activate Sale[0m[33m (41ms)[0m
+    [32m  ✓[0m[90m HSToken activate Lock[0m[33m (42ms)[0m
+    [32m  ✓[0m[90m HSToken activate Market[0m[33m (40ms)[0m
+    [32m  ✓[0m[90m HSToken adds EIN 1 to whitelist[0m[33m (51ms)[0m
+    [32m  ✓[0m[90m HydroToken user 1 approves 1M HydroTokens for HSToken[0m
+      HSTBuyerRegistry kyc status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - kyc status: false[0m
+    [32m  ✓[0m[90m HSToken Reverts buy for EIN user 1[0m[33m (68ms)[0m
+      HSTBuyerRegistry kyc status false
+    [32m  ✓[0m[90m Set buyer status true for user 1[0m[33m (38ms)[0m
+      HSTBuyerRegistry kyc status true
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - kyc status: true[0m
+    [32m  ✓[0m[90m HSToken buyTokens from EIN user 1[0m[31m (91ms)[0m
+    [32m  ✓[0m[90m HSToken buyTokens again from EIN user 1[0m[31m (85ms)[0m
+NOW:  1565038292
+Gas: 654464
+    [32m  ✓[0m[90m Store periods[0m[31m (189ms)[0m
+Periods: [ 1565038290,
+  1565038492,
+  1565038692,
+  1565038892,
+  1565039092,
+  1565039292,
+  1565039492,
+  1565039692,
+  1565039892,
+  1565040092,
+  1565040292,
+  1565040492,
+  1565040692,
+  1565040892,
+  1565041092,
+  1565041292,
+  1565041492,
+  1565041692,
+  1565041892,
+  1565042092,
+  1565042292,
+  1565042492,
+  1565042692,
+  1565042892,
+  1565043092 ]
+Now: 1565038492
+Current period: 1
+    [32m  ✓[0m[90m Read periods[0m[31m (101ms)[0m
+Balance user 1: 3.6
+Balance user 3: 0
+    [32m  ✓[0m[90m HSToken reverts transfer 1.2 HSTokens to Account 2[0m[31m (115ms)[0m
+      HSTBuyerRegistry kyc status true
+    [32m  ✓[0m[90m Set buyer status true for user 2[0m
+Balance user 1: 3.6
+Balance user 3: 0
+Balance user 1: 2.4
+Balance user 3: 1.2
+    [32m  ✓[0m[90m HSToken transfer 1.2 HSTokens to Account 2[0m[31m (135ms)[0m
+    [32m  ✓[0m[90m Setting oracle address[0m[33m (44ms)[0m
+    [32m  ✓[0m[90m Oracle notifies results of 5 Hydros for this period[0m[33m (40ms)[0m
+HydroToken Balance user 1 BEFORE: 11111102075
+Period payed: 1
+Participation rate: 0.666666666666666666
+Period results: 5
+Amount payed: 3.33333333333333333
+Amount from transfer log: 3.33333333333333333
+HydroToken Balance user 1 AFTER: 11111102078.33333333333333333
+    [32m  ✓[0m[90m User claims payment 1[0m[33m (75ms)[0m
+Current Period: 1
+    [32m  ✓[0m[90m Go to next period[0m
+    [32m  ✓[0m[90m Oracle notifies results of 4 Hydros for this period[0m[33m (44ms)[0m
+Period payed: 2
+Participation rate: 0.666666666666666666
+Period results: 4
+Amount payed: 2.666666666666666664
+Amount from transfer log: 2.666666666666666664
+HydroToken Balance user 1 AFTER: 11111102080.999999999999999994
+    [32m  ✓[0m[90m User claims payment 1[0m[33m (65ms)[0m
+Current Period: 2
+Current Period: 2
+    [32m  ✓[0m[90m Advancing periods[0m
+    [32m  ✓[0m[90m KYCResolver approve again EIN identity 2[0m
+Balance user 1: 1.6
+Balance user 3: 2
+    [32m  ✓[0m[90m HSToken transfer 0.8 HSTokens to Account 2, to decrease his participationRate at period 4[0m[31m (106ms)[0m
+Current Period: 4
+    [32m  ✓[0m[90m Advancing new period[0m
+    [32m  ✓[0m[90m Oracle notifies results of 5 Hydros for this period[0m[33m (40ms)[0m
+Period payed: 3
+Participation rate: 0.666666666666666666
+Period results: 0
+Amount payed: 0
+    [32m  ✓[0m[90m User claims payment 1 but there is nothing, once[0m[33m (50ms)[0m
+Period payed: 4
+Participation rate: 0.444444444444444444
+Period results: 0
+Amount payed: 0
+    [32m  ✓[0m[90m User claims payment 1 but there is nothing twice[0m[33m (47ms)[0m
+Period payed: 5
+Participation rate: 0.444444444444444444
+Period results: 5
+Amount payed: 2.22222222222222222
+Amount from transfer log: 2.22222222222222222
+HydroToken Balance user 1 AFTER: 11111102083.222222222222222214
+    [32m  ✓[0m[90m User claims payment 1 and now it works[0m[31m (79ms)[0m
+
+[0m  Contract: Testing: HSTokenRegistry + HSTServiceRegistry + HSTBuyerRegistry[0m
+[0m    Preparing infrastructure[0m
+    [32m  ✓[0m[90m Users created[0m
+    common - Date Time 0x70e7a4b70c60EE932Df26dB1AB03CAd19a9d92a1
+    common - Hydro Token 0x0a77af46B84f8600289b484C130093Fa6e8A7EB4
+    common - Identity Registry 0x5499722A878F40feE8228e2BFf2dDd04E42bfc8d
+    common - Snowflake 0x70e511d1FC42C719B8525e93C2F8216B0Ca24640
+    common - Old Client Raindrop 0xCCed8BfA7a6C974591a6134b9991B154c892948E
+    common - Client Raindrop 0x1A26617525F0B03D9165Fd547E82ffebFE38888f
+    common - KYC Resolver 0x5A867b8A02ae112337cb3F35ADE0F5A4aA3aF24E
+    common - Buyer Registry 0x42FbADecCd2b7189280f32AD079600d03324caf9
+    common - Token Registry 0xf1A909B20947125c37cB54e44dd81E39c6527DF0
+    common - Service Registry 0x51AEC82ec2b6b41ac1a9beE7fe9AA4e4c3F3F8e2
+    common - finishing and returning instances
+    [32m  ✓[0m[90m Common contracts deployed[0m[31m (1201ms)[0m
+    [32m  ✓[0m[90m Snowflake identities created for all accounts[0m[31m (3048ms)[0m
+      user(0) => EIN 1 user.id 1 user.ein 1
+      user(1) => EIN 2 user.id 2 user.ein 2
+      user(2) => EIN 3 user.id 3 user.ein 3
+      user(3) => EIN 4 user.id 4 user.ein 4
+      user(4) => EIN 5 user.id 5 user.ein 5
+      user(5) => EIN 6 user.id 6 user.ein 6
+      user(6) => EIN 7 user.id 7 user.ein 7
+      user(7) => EIN 8 user.id 8 user.ein 8
+      user(8) => EIN 9 user.id 9 user.ein 9
+      user(9) => EIN 10 user.id 10 user.ein 10
+    [32m  ✓[0m[90m IdentityRegistry retrieve EINs[0m[31m (126ms)[0m
+      User 1 (token owner) => EIN 1 => value 2 <BN: 2>
+    [32m  ✓[0m[90m IdentityRegistry retrieve EIN - token owner[0m
+      User 2 (general user) => EIN 2 => value 3 <BN: 3>
+    [32m  ✓[0m[90m IdentityRegistry retrieve EIN[0m
+[0m    Checking HSTokenRegistry functionality - basic[0m
+      Token Registry address 0xf1A909B20947125c37cB54e44dd81E39c6527DF0
+    [32m  ✓[0m[90m HSTokenRegistry exists[0m
+[0m    Checking HSTServiceRegistry functionality - basic[0m
+      HSTServiceRegistry address 0x51AEC82ec2b6b41ac1a9beE7fe9AA4e4c3F3F8e2
+    [32m  ✓[0m[90m HSTServiceRegistry exists[0m
+[0m    Checking HSTokenRegistry functionality - token creation[0m
+      Token dummy address 0xf58161d60b2133b1339563fc3e38a8e80410b08c
+    [32m  ✓[0m[90m Create token dummy address[0m
+    [32m  ✓[0m[90m Appoint a new token[0m[33m (65ms)[0m
+      Token owner EIN 2
+    [32m  ✓[0m[90m Get token owner EIN[0m
+      Token symbol TEST                            
+    [32m  ✓[0m[90m Get token symbol[0m
+      Token address TestToken                       
+    [32m  ✓[0m[90m Get token name[0m
+      Token description just-a-test
+    [32m  ✓[0m[90m Get token description[0m
+      Token decimals 10
+    [32m  ✓[0m[90m Get token decimals[0m
+[0m    Checking HSTServiceRegistry functionality - token categories creation[0m
+      MLA category Main Legal Advisors
+      KYC category Know Your Customer
+      AML category Anti Money Laundering
+      CFT category Counter Financing of Terrorism
+    [32m  ✓[0m[90m Token categories exist[0m[33m (55ms)[0m
+[0m    Checking HSTServiceRegistry functionality - additional[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add category[0m[33m (43ms)[0m
+      HSTServiceRegistry category description just-a-test-category
+    [32m  ✓[0m[90m HSTServiceRegistry - get category[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add service[0m[33m (45ms)[0m
+      HSTServiceRegistry service category KYC                             
+    [32m  ✓[0m[90m HSTServiceRegistry - get service[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - is provider true[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - remove service[0m[33m (47ms)[0m
+      HSTServiceRegistry service category                                 
+    [32m  ✓[0m[90m HSTServiceRegistry - get service after removal[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - is provider false[0m
+[0m    Checking HSTBuyerRegistry functionality - token rules[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - assign token values[0m[33m (45ms)[0m
+      HSTBuyerRegistry minimum age 21
+    [32m  ✓[0m[90m HSTBuyerRegistry - get token values - minimum age[0m
+      HSTBuyerRegistry minimum net worth 50000
+    [32m  ✓[0m[90m HSTBuyerRegistry - get token values - minimum net worth[0m
+      HSTServiceRegistry minimum salary 36000
+    [32m  ✓[0m[90m HSTBuyerRegistry - get token values - minimum salary[0m
+      HSTServiceRegistry investor status required true
+    [32m  ✓[0m[90m HSTBuyerRegistry - get token values - investor status required[0m
+[0m    Checking HSTBuyerRegistry functionality - country ban[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - ban country[0m
+      HSTBuyerRegistry country ban status true
+    [32m  ✓[0m[90m HSTBuyerRegistry - get country ban[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - lift country ban[0m[33m (40ms)[0m
+      HSTBuyerRegistry country ban status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get country ban[0m
+[0m    Checking HSTBuyerRegistry functionality - buyer data[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer - suitable[0m[33m (61ms)[0m
+      HSTBuyerRegistry get first name Test first name 1
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - first name[0m
+      HSTBuyerRegistry get last name Test last name 1
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - last name[0m[31m (83ms)[0m
+      HSTBuyerRegistry get country code GMB                             
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - iso country code[0m
+      HSTBuyerRegistry get birthday 471657600
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - birthday[0m
+      HSTBuyerRegistry get net worth 100000
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - net worth[0m
+      HSTBuyerRegistry get salary 50000
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - salary[0m
+      HSTBuyerRegistry get accredited investor status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - accredited investor status[0m
+      HSTBuyerRegistry kyc status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - kyc status[0m
+      HSTBuyerRegistry aml status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - aml status[0m
+      HSTBuyerRegistry cft status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - cft status[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer - unsuitable - Kenya[0m[31m (78ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - ban country - Kenya[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer - unsuitable - 20 years old[0m[33m (73ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer - unsuitable - low net worth[0m[33m (69ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add buyer - unsuitable - low salary[0m[33m (62ms)[0m
+[0m    Checking HSTBuyerRegistry functionality - change buyer status[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add service[0m[33m (45ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add kyc for buyer[0m[33m (49ms)[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add service[0m[33m (38ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add aml for buyer[0m[33m (52ms)[0m
+    [32m  ✓[0m[90m HSTServiceRegistry - add service[0m[33m (44ms)[0m
+    [32m  ✓[0m[90m HSTBuyerRegistry - add cft for buyer[0m[33m (71ms)[0m
+      HSTBuyerRegistry kyc status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - kyc status[0m
+      HSTBuyerRegistry aml status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - aml status[0m
+      HSTBuyerRegistry cft status false
+    [32m  ✓[0m[90m HSTBuyerRegistry - get buyer data - cft status[0m
+
+[0m  Contract: Testing SnowflakeOwnable[0m
+  [32m  ✓[0m[90m Users created[0m
+    common - Date Time 0x70e7a4b70c60EE932Df26dB1AB03CAd19a9d92a1
+    common - Hydro Token 0x0a77af46B84f8600289b484C130093Fa6e8A7EB4
+    common - Identity Registry 0x5499722A878F40feE8228e2BFf2dDd04E42bfc8d
+    common - Snowflake 0x70e511d1FC42C719B8525e93C2F8216B0Ca24640
+    common - Old Client Raindrop 0xCCed8BfA7a6C974591a6134b9991B154c892948E
+    common - Client Raindrop 0x1A26617525F0B03D9165Fd547E82ffebFE38888f
+    common - KYC Resolver 0x5A867b8A02ae112337cb3F35ADE0F5A4aA3aF24E
+    common - Buyer Registry 0x42FbADecCd2b7189280f32AD079600d03324caf9
+    common - Token Registry 0xf1A909B20947125c37cB54e44dd81E39c6527DF0
+    common - Service Registry 0x51AEC82ec2b6b41ac1a9beE7fe9AA4e4c3F3F8e2
+    common - finishing and returning instances
+  [32m  ✓[0m[90m Common contracts deployed[0m[31m (1222ms)[0m
+  [32m  ✓[0m[90m Snowflake identities created for all accounts[0m[31m (2503ms)[0m
+[0m    Checking IdentityRegistry functionality[0m
+    [32m  ✓[0m[90m IdentityRegistry create Identity (exists, should revert)[0m[33m (45ms)[0m
+      EIN users[1] <BN: 2>
+    [32m  ✓[0m[90m IdentityRegistry retrieve EIN[0m
+[0m    Checking SnowflakeOwnable functionality[0m
+      SnowflakeOwnable Address 0xD62Baf02b76Ba177Ba3BE18DcEB95ebC8d96D2E0
+      users[1] 0x35B3635fAa18029924F19a008fF32e92140a7250
+    [32m  ✓[0m[90m SnowflakeOwnable can be created[0m[33m (43ms)[0m
+      Owner EIN <BN: 0>
+    [32m  ✓[0m[90m SnowflakeOwnable exists[0m
+      Identity Registry Address 0x5499722A878F40feE8228e2BFf2dDd04E42bfc8d
+    [32m  ✓[0m[90m SnowflakeOwnable set Identity Registry[0m[33m (40ms)[0m
+      snowflake ownable identity registry address 0x5499722A878F40feE8228e2BFf2dDd04E42bfc8d
+    [32m  ✓[0m[90m SnowflakeOwnable get Identity Registry Address[0m
+      snowflake ownable owner EIN <BN: 2>
+    [32m  ✓[0m[90m SnowflakeOwnable get owner EIN[0m
+    [32m  ✓[0m[90m Snowflake ownable transfer ownership (no identity, should revert)[0m[33m (52ms)[0m
+      snowflake ownable new owner EIN after transfer 1 <BN: 2>
+    [32m  ✓[0m[90m SnowflakeOwnable get owner EIN[0m
+      EIN users[3] <BN: 4>
+    [32m  ✓[0m[90m Snowflake ownable transfer ownership (not the owner, should revert)[0m[31m (137ms)[0m
+      snowflake ownable new owner EIN after transfer 2 <BN: 2>
+    [32m  ✓[0m[90m SnowflakeOwnable get owner EIN[0m
+    [32m  ✓[0m[90m Snowflake ownable transfer ownership[0m[33m (58ms)[0m
+      snowflake ownable new owner EIN after transfer 3 <BN: 9>
+    [32m  ✓[0m[90m SnowflakeOwnable get owner EIN[0m
+
+
+[92m [0m[32m 120 passing[0m[90m (19s)[0m
+

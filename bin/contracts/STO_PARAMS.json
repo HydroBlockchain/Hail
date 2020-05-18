@@ -1,0 +1,160 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "ethAllowed",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "lockPeriod",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "hydroAllowed",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "percAllowedTokens",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "STO_PARAMS_ready",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "ethOracle",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "hydroOracle",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "maxInvestors",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "minInvestors",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "bytecode": "608060405234801561001057600080fd5b50610199806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80637f93f67e116100665780637f93f67e146100ca5780639c8762e1146100e6578063b2f732551461010a578063bc99cc3714610112578063fec6a4af1461011a57610093565b80633f6697fb146100985780633fd8b02f146100b2578063671bf374146100ba5780636cb5a087146100c2575b600080fd5b6100a0610122565b60408051918252519081900360200190f35b6100a0610128565b6100a061012e565b6100a0610134565b6100d261013a565b604080519115158252519081900360200190f35b6100ee610143565b604080516001600160a01b039092168252519081900360200190f35b6100ee610152565b6100a0610161565b6100a0610167565b60035481565b60045481565b60025481565b60015481565b60005460ff1681565b6007546001600160a01b031681565b6008546001600160a01b031681565b60065481565b6005548156fea165627a7a72305820782d972c9f38393c6dc0261a3d21bd92c767fd9340f4c805f3f7bca152821a6e0029",
+    "functionHashes": {
+        "STO_PARAMS_ready()": "7f93f67e",
+        "ethAllowed()": "3f6697fb",
+        "ethOracle()": "9c8762e1",
+        "hydroAllowed()": "671bf374",
+        "hydroOracle()": "b2f73255",
+        "lockPeriod()": "3fd8b02f",
+        "maxInvestors()": "bc99cc37",
+        "minInvestors()": "fec6a4af",
+        "percAllowedTokens()": "6cb5a087"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "81800",
+            "executionCost": "129",
+            "totalCost": "81929"
+        },
+        "external": {
+            "STO_PARAMS_ready()": "410",
+            "ethAllowed()": "399",
+            "ethOracle()": "459",
+            "hydroAllowed()": "443",
+            "hydroOracle()": "481",
+            "lockPeriod()": "421",
+            "maxInvestors()": "464",
+            "minInvestors()": "486",
+            "percAllowedTokens()": "465"
+        }
+    }
+}

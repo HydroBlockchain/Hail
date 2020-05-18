@@ -1,0 +1,264 @@
+{
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "identityRegistry",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_name",
+                    "type": "bytes32"
+                },
+                {
+                    "name": "_description",
+                    "type": "string"
+                }
+            ],
+            "name": "addCategory",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "isOwner",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "name": "_category",
+                    "type": "bytes32"
+                },
+                {
+                    "name": "_oldService",
+                    "type": "address"
+                },
+                {
+                    "name": "_newService",
+                    "type": "address"
+                }
+            ],
+            "name": "replaceService",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "name": "_category",
+                    "type": "bytes32"
+                },
+                {
+                    "name": "_service",
+                    "type": "address"
+                }
+            ],
+            "name": "addService",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getOwnerEIN",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "_newOwner",
+                    "type": "uint256"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                },
+                {
+                    "name": "",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "serviceRegistry",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "ServiceRegistry",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_name",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_description",
+                    "type": "string"
+                }
+            ],
+            "name": "AddCategory",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_category",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "service",
+                    "type": "address"
+                }
+            ],
+            "name": "AddService",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_token",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_category",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": false,
+                    "name": "_oldService",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newService",
+                    "type": "address"
+                }
+            ],
+            "name": "ReplaceService",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "_previousOwnerEIN",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "name": "_newOwnerEIN",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        }
+    ],
+    "bytecode": "",
+    "functionHashes": {
+        "ServiceRegistry()": "fef83508",
+        "addCategory(bytes32,string)": "297d574e",
+        "addService(address,bytes32,address)": "a77a48bf",
+        "getOwnerEIN()": "c44a5a35",
+        "identityRegistry()": "134e18f4",
+        "isOwner()": "8f32d59b",
+        "renounceOwnership()": "715018a6",
+        "replaceService(address,bytes32,address,address)": "930a6990",
+        "serviceRegistry(address,bytes32)": "dbcfaf19",
+        "transferOwnership(uint256)": "d23e8489"
+    },
+    "gasEstimates": null
+}

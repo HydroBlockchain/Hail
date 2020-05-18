@@ -1,0 +1,124 @@
+{
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "resolver",
+                    "type": "address"
+                },
+                {
+                    "name": "einFrom",
+                    "type": "uint256"
+                },
+                {
+                    "name": "einTo",
+                    "type": "uint256"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "name": "snowflakeCallBytes",
+                    "type": "bytes"
+                }
+            ],
+            "name": "snowflakeCall",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "resolver",
+                    "type": "address"
+                },
+                {
+                    "name": "einFrom",
+                    "type": "uint256"
+                },
+                {
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "name": "snowflakeCallBytes",
+                    "type": "bytes"
+                }
+            ],
+            "name": "snowflakeCall",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "resolver",
+                    "type": "address"
+                },
+                {
+                    "name": "einTo",
+                    "type": "uint256"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "name": "snowflakeCallBytes",
+                    "type": "bytes"
+                }
+            ],
+            "name": "snowflakeCall",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "resolver",
+                    "type": "address"
+                },
+                {
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "name": "snowflakeCallBytes",
+                    "type": "bytes"
+                }
+            ],
+            "name": "snowflakeCall",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "bytecode": "",
+    "functionHashes": {
+        "snowflakeCall(address,address,uint256,bytes)": "e5a13092",
+        "snowflakeCall(address,uint256,address,uint256,bytes)": "3aaaa8a0",
+        "snowflakeCall(address,uint256,uint256,bytes)": "3c72e439",
+        "snowflakeCall(address,uint256,uint256,uint256,bytes)": "1c75edfe"
+    },
+    "gasEstimates": null
+}
